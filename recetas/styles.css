@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f7deecf5; /* Fondo pastel claro */
+    color: #333; /* Texto gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #e9b6f1; /* Color pastel morado claro */
+    color: #56157e; /* Texto en morado */
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #4e1572; /* Morado pastel */
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #c1f5dd; /* Verde menta claro */
+    border-radius: 5px;
+}
+
+/* Estilo de enlaces en la barra de navegación */
+.nav-link {
+    color: #6a1b9a !important; /* Morado pastel */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Enlaces al pasar el mouse */
+.nav-link:hover {
+    color: #9c27b0 !important; /* Morado más oscuro */
+}
+
+/* Categorías - efecto hover */
+.categoria {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria:hover {
+    transform: scale(1.05); /* Aumenta de tamaño al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+}
+
+/* Botón con transición */
+.transition-button {
+    background-color: #6a1b9a; /* Color morado pastel */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+.transition-button:hover {
+    background-color: #9c27b0; /* Morado oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño del botón */
+}
+
+/* Footer */
+footer {
+    background-color: #d4f8e8; /* Verde menta claro */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Imágenes dentro de las categorías */
+.categoria img {
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Alto del contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+
+}
+
+/* Espaciado entre las imágenes y texto */
+.categoria h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* Ajustes del contenedor principal */
+.container {
+    padding: 30px 15px;
+}
+
+/* Para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .categoria {
+        margin-bottom: 20px;
+    }
+}

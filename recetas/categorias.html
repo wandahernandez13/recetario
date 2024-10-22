@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Recetario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-light text-center py-5">
+        <h1>Categorías de Recetas</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Recetario</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="categorias.html">Todas las Categorías</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=dulce">Dulce</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=salado">Salado</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=saludable">Saludable</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=vegano">Vegano</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=bebidas">Bebidas</a>
+                            <a class="dropdown-item" href="menu_categoria.html?categoria=cocteles">Cocteles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu_categoria.html">Menú Detallado</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section class="text-center">
+            <h2>Selecciona una Categoría</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="donas.jpg" alt="Dulce" class="img-fluid mb-2">
+                        <h3>Dulce</h3>
+                        <a href="menu_categoria.html?categoria=dulce" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="lasaña.jpg" alt="Salado" class="img-fluid mb-2">
+                        <h3>Salado</h3>
+                        <a href="menu_categoria.html?categoria=salado" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="ensalada.jpg" alt="Saludable" class="img-fluid mb-2">
+                        <h3>Saludable</h3>
+                        <a href="menu_categoria.html?categoria=saludable" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="tortilla.jpg" alt="Vegano" class="img-fluid mb-2">
+                        <h3>Vegano</h3>
+                        <a href="menu_categoria.html?categoria=vegano" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="bebidafresa.jpg" alt="Bebidas" class="img-fluid mb-2">
+                        <h3>Bebidas</h3>
+                        <a href="menu_categoria.html?categoria=bebidas" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="categoria bg-light p-3 text-center">
+                        <img src="coctel1.jpg" alt="Cocteles" class="img-fluid mb-2">
+                        <h3>Cocteles</h3>
+                        <a href="menu_categoria.html?categoria=cocteles" class="btn btn-primary">Abrir Menú</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Recetario de Wanda - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

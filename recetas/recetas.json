@@ -1,0 +1,112 @@
+{
+    "recetas": [
+        {
+            "id": 1,
+            "nombre": "Pastel de Chocolate",
+            "categoria": "Dulce",
+            "descripcion": "Un delicioso y esponjoso pastel de chocolate con cobertura cremosa.",
+            "imagen": "pastel_chocolate.jpg",
+            "ingredientes": [
+                "1 taza de azúcar",
+                "2 tazas de harina",
+                "3 huevos",
+                "1 taza de cacao en polvo",
+                "1 cucharadita de polvo de hornear",
+                "1/2 taza de mantequilla",
+                "1 taza de leche"
+            ],
+            "instrucciones": [
+                "Precalienta el horno a 180°C.",
+                "Mezcla la mantequilla con el azúcar hasta que quede suave.",
+                "Añade los huevos uno a uno y bate bien.",
+                "Agrega la harina, el cacao y el polvo de hornear tamizados.",
+                "Incorpora la leche poco a poco mientras mezclas.",
+                "Vierte la mezcla en un molde y hornea por 40 minutos."
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Ensalada Vegana",
+            "categoria": "Vegano",
+            "descripcion": "Una ensalada fresca con ingredientes naturales y aderezo de limón.",
+            "imagen": "ensalada_vegana.jpg",
+            "ingredientes": [
+                "1 taza de espinacas",
+                "1 taza de lechuga",
+                "1 pepino en rodajas",
+                "1 zanahoria rallada",
+                "1 aguacate en cubos",
+                "Jugo de 1 limón",
+                "Sal al gusto"
+            ],
+            "instrucciones": [
+                "Lava y corta las verduras.",
+                "Mezcla todas las verduras en un tazón grande.",
+                "Rocía con el jugo de limón y agrega sal al gusto.",
+                "Sirve inmediatamente."
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Pizza Margarita",
+            "categoria": "Salado",
+            "descripcion": "Pizza con salsa de tomate, mozzarella fresca y albahaca.",
+            "imagen": "pizza_margarita.jpg",
+            "ingredientes": [
+                "Masa de pizza",
+                "1 taza de salsa de tomate",
+                "200g de queso mozzarella",
+                "Hojas de albahaca fresca",
+                "Aceite de oliva",
+                "Sal y pimienta al gusto"
+            ],
+            "instrucciones": [
+                "Precalienta el horno a 220°C.",
+                "Extiende la masa de pizza en una bandeja.",
+                "Esparce la salsa de tomate sobre la masa.",
+                "Añade la mozzarella fresca en trozos por toda la pizza.",
+                "Hornea por 15 minutos o hasta que la masa esté dorada y el queso derretido.",
+                "Retira del horno y añade las hojas de albahaca fresca, un poco de aceite de oliva y sal y pimienta al gusto."
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Smoothie de Fresas",
+            "categoria": "Bebidas",
+            "descripcion": "Un refrescante smoothie de fresas frescas y yogur.",
+            "imagen": "smoothie_fresas.jpg",
+            "ingredientes": [
+                "1 taza de fresas",
+                "1/2 taza de yogur natural",
+                "1/2 taza de leche",
+                "1 cucharada de miel"
+            ],
+            "instrucciones": [
+                "Lava y corta las fresas.",
+                "Coloca todos los ingredientes en la licuadora.",
+                "Licúa hasta obtener una mezcla suave.",
+                "Sirve en un vaso y disfruta."
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Margarita Clásica",
+            "categoria": "Cocteles",
+            "descripcion": "Un coctel clásico de tequila, triple sec y jugo de limón.",
+            "imagen": "margarita_clasica.jpg",
+            "ingredientes": [
+                "50 ml de tequila",
+                "25 ml de triple sec",
+                "25 ml de jugo de limón",
+                "Sal para escarchar el vaso",
+                "Rodaja de limón para decorar"
+            ],
+            "instrucciones": [
+                "Escarcha el borde del vaso con sal.",
+                "En una coctelera, mezcla el tequila, triple sec y jugo de limón con hielo.",
+                "Agita bien y cuela en el vaso.",
+                "Decora con una rodaja de limón."
+            ]
+        }
+    ]
+}

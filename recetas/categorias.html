@@ -6,12 +6,16 @@
     <title>Categorías - Recetario</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header class="bg-light text-center py-5">
         <h1>Categorías de Recetas</h1>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Recetario</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://i.pinimg.com/originals/94/35/52/9435529dcb55f6bf32c56fb28edba854.gif" alt="Logo" class="logo-animado mr-2">
+                Recetario
+            </a>          
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +41,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="menu_categoria.html">Menú Detallado</a>
                     </li>
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarMegaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-share-alt"></i> Redes Sociales
+                        </a>
+                        <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarMegaDropdown">
+                            <div class="d-flex justify-content-around">
+                                <a href="#" onclick="copyLink('https://wa.me/+573054201015')" title="WhatsApp">
+                                    <i class="fab fa-whatsapp fa-2x"></i>
+                                </a>
+                                <a href="#" onclick="copyLink('https://instagram.com/wandaaa1238172')" title="Instagram">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="#" onclick="copyLink('https://github.com/wandahernandez13')" title="GitHub">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+
+                <!-- Barra de búsqueda -->
+                <form class="form-inline my-2 my-lg-0 ml-auto" action="buscar.html" method="GET">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar recetas..." aria-label="Buscar" name="query">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </div>
         </nav>
     </header>
@@ -50,42 +78,42 @@
                     <div class="categoria bg-light p-3 text-center">
                         <img src="donas.jpg" alt="Dulce" class="img-fluid mb-2">
                         <h3>Dulce</h3>
-                        <a href="menu_categoria.html?categoria=dulce" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=dulce" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="categoria bg-light p-3 text-center">
                         <img src="lasaña.jpg" alt="Salado" class="img-fluid mb-2">
                         <h3>Salado</h3>
-                        <a href="menu_categoria.html?categoria=salado" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=salado" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="categoria bg-light p-3 text-center">
                         <img src="ensalada.jpg" alt="Saludable" class="img-fluid mb-2">
                         <h3>Saludable</h3>
-                        <a href="menu_categoria.html?categoria=saludable" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=saludable" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="categoria bg-light p-3 text-center">
                         <img src="tortilla.jpg" alt="Vegano" class="img-fluid mb-2">
                         <h3>Vegano</h3>
-                        <a href="menu_categoria.html?categoria=vegano" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=vegano" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="categoria bg-light p-3 text-center">
                         <img src="bebidafresa.jpg" alt="Bebidas" class="img-fluid mb-2">
                         <h3>Bebidas</h3>
-                        <a href="menu_categoria.html?categoria=bebidas" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=bebidas" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="categoria bg-light p-3 text-center">
                         <img src="coctel1.jpg" alt="Cocteles" class="img-fluid mb-2">
                         <h3>Cocteles</h3>
-                        <a href="menu_categoria.html?categoria=cocteles" class="btn btn-primary">Abrir Menú</a>
+                        <a href="menu_categoria.html?categoria=cocteles" class="btn-custom">Abrir Menú</a>
                     </div>
                 </div>
             </div>
@@ -96,6 +124,16 @@
         <p>&copy; 2024 Recetario de Wanda - Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JavaScript para copiar enlaces -->
+    <script>
+        function copyLink(link) {
+            navigator.clipboard.writeText(link).then(function() {
+                alert('Enlace copiado: ' + link);
+            }, function(err) {
+                console.error('Error al copiar el enlace: ', err);
+            });
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

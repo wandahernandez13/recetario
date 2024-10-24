@@ -20,6 +20,34 @@ h1, h2, h3 {
     color: #4e1572; /* Morado pastel */
 }
 
+/* Menú de redes sociales, solo muestra el logo */
+.dropdown-item img {
+    width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-item img:hover {
+    transform: scale(1.2); /* Agranda el logo al pasar el mouse */
+}
+
+/* Estilo de la barra de búsqueda */
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+    color: #6a1b9a;
+    border-color: #6a1b9a;
+}
+
+.btn-outline-success:hover {
+    background-color: #6a1b9a;
+    color: #fff;
+    border-color: #6a1b9a;
+}
+
 /* Estilo de la barra de navegación */
 .navbar {
     background-color: #c1f5dd; /* Verde menta claro */
@@ -36,6 +64,52 @@ h1, h2, h3 {
 /* Enlaces al pasar el mouse */
 .nav-link:hover {
     color: #9c27b0 !important; /* Morado más oscuro */
+}
+
+/**/
+.btn-primary btn-lg transition-btn{
+    color: #9c27b0 !important; /* Morado más oscuro */
+}
+
+/* Botón de explorar categorías con estilo suave */
+.btn-explorar {
+    background-color: #f5a0ad; /* Rosa pastel */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px; /* Bordes redondeados */
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en el botón */
+.btn-explorar:hover {
+    background-color: #ff7f9d; /* Un tono más oscuro de rosa pastel */
+    transform: translateY(-5px); /* Leve efecto de elevación al pasar el mouse */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+/* Efecto al hacer clic */
+.btn-explorar:active {
+    transform: translateY(0); /* Vuelve a su lugar cuando se presiona */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para el botón personalizado "Abrir Menú" */
+.btn-custom {
+    background-color: #7f6af8; /* Color de fondo */
+    color: white; /* Color de texto */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: all 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.btn-custom:hover {
+    background-color: #735bfc; /* Cambia el color al hacer hover */
+    color: black; /* Color de texto */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Mayor sombra al hacer hover */
+    transform: translateY(-3px); /* Efecto de elevación */
 }
 
 /* Categorías - efecto hover */
@@ -76,7 +150,19 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/**/
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.logo-animado {
+    width: 100px;
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados */
+    animation: rotateLogo 3s infinite linear;
+}
 /* Imágenes dentro de las categorías */
 .categoria img {
     width: 200px; /* Ancho de la imagen */

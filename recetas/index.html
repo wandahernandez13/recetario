@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Recetario</title>
+    <title>Inicio - Recetario de Wanda</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header class="bg-light text-center py-5">
-        <h1 class="display-4 text-primary">¡Bienvenido!</h1>
+    <!-- Encabezado con logo animado y búsqueda -->
+    <header class="bg-light py-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Recetario</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://i.pinimg.com/originals/94/35/52/9435529dcb55f6bf32c56fb28edba854.gif" alt="Logo" class="logo-animado mr-2">
+                Recetario
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,26 +30,65 @@
                     <li class="nav-item">
                         <a class="nav-link" href="menu_categoria.html">Menú Detallado</a>
                     </li>
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarMegaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-share-alt"></i> Redes Sociales
+                        </a>
+                        <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarMegaDropdown">
+                            <div class="d-flex justify-content-around">
+                                <a href="#" onclick="copyLink('https://wa.me/+573054201015')" title="WhatsApp">
+                                    <i class="fab fa-whatsapp fa-2x"></i>
+                                </a>
+                                <a href="#" onclick="copyLink('https://instagram.com/wandaaa1238172')" title="Instagram">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="#" onclick="copyLink('https://github.com/wandahernandez13')" title="GitHub">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar recetas" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
         </nav>
     </header>
 
+    <!-- Sección principal -->
     <main class="container mt-5">
-        <section class="text-center">
-            <h2 class="text-info">Descubre recetas increíbles</h2>
-            <p class="lead">¡Explora una variedad de comidas deliciosas!</p>
-            <img src="hotcakes.jpg" alt="Deliciosas recetas" class="img-fluid mb-4" style=width:80%;max-width:200px;border-radius:20px>
-            <a href="categorias.html" class="btn btn-primary btn-lg transition-button">Ver Categorías</a>
-        </section>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="text-info mb-4">¡Bienvenido a Nuestro Recetario!</h1>
+                <p class="lead">Explora una amplia variedad de recetas organizadas en categorías que harán tus comidas inolvidables.</p>
+                <a href="categorias.html" class="btn btn-explorar">Explorar Categorías</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://i.pinimg.com/originals/02/e8/47/02e8477de880892748c5c0748417b848.gif" alt="Chef Animado" class="img-fluid">
+            </div>
+        </div>
     </main>
 
-    <footer class="bg-light text-center py-3">
+    <footer class="bg-light text-center py-3 mt-5">
         <p>&copy; 2024 Recetario de Wanda- Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para copiar enlaces -->
+    <script>
+        function copyLink(link) {
+            navigator.clipboard.writeText(link).then(function() {
+                alert('Enlace copiado: ' + link);
+            }, function(err) {
+                console.error('Error al copiar el enlace: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
